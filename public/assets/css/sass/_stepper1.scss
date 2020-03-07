@@ -1,0 +1,1182 @@
+.stepper{
+  background: #D848610D;
+  // height: 125px;
+  padding-bottom: 35px;
+
+  .stepper-number {
+    margin-top: 35px;
+    text-align: center;
+
+    span {
+      background-color: $color2;
+      padding: 10px 25px;
+      border-radius: 5px;
+      color: #ffffff;
+      font-size: 30px;
+      font-family: $f-bold;
+      float: right;
+
+      @include for-phone-only {
+        font-size: 20px;
+      }
+    }
+
+    h2 {
+      display: inline-block;
+      background: #D848611A;
+      padding: 20px 25px;
+      text-align: center;
+      border-radius: 5px;
+      font-size: 21px;
+      font-family: $f-bold;
+      color: $color2;
+      position: relative;
+      top: 0;
+      right: -50px;
+
+      @include for-phone-only {
+        padding: 18px 25px;
+        top: -50px;
+        right: 30px;
+        font-size: 13px;
+      }
+    }
+    .head{
+      background-color: transparent;
+      font-size: 40px;
+      top: -18px;
+      @include for-tablet{
+        font-size: 25px;
+      }
+      @include for-phone-only {
+        font-size: 20px;
+      }
+    }
+  }
+
+  .stepper-span {
+    display: block;
+    width: 65px;
+    height: 2px;
+    position: absolute;
+    left: 13px;
+    top: 66px;
+    background-color: #D848611A;
+  }
+
+  .stepper-span2 {
+    display: block;
+    width: 65px;
+    height: 2px;
+    position: absolute;
+    left: 13px;
+    top: 66px;
+    background-color: $color2;
+  }
+
+  // ////////////////////////////////
+  .stepper-number2 {
+    margin-top: 35px;
+    text-align: center;
+
+    span {
+      background-color: #D848611A;
+      padding: 10px 25px;
+      border-radius: 5px;
+      color: $color2;
+      font-size: 30px;
+      font-family: $f-bold;
+      float: right;
+
+      @include for-phone-only {
+        font-size: 20px;
+      }
+    }
+
+    h2 {
+      display: inline-block;
+      background: #D848611A;
+      padding: 20px 25px;
+      text-align: center;
+      border-radius: 5px;
+      font-size: 21px;
+      font-family: $f-bold;
+      color: $color2;
+      position: relative;
+      top: 0;
+      right: -50px;
+    }
+  }
+
+  .stepper-span {
+    display: block;
+    width: 65px;
+    height: 2px;
+    position: absolute;
+    left: 13px;
+    top: 66px;
+    background-color: #D848611A;
+  }
+}
+.stepper-bo{
+  .stepper-number {
+    margin-top: 35px;
+    text-align: center;
+
+    span {
+      background-color: $color2;
+      padding: 10px 25px;
+      border-radius: 5px;
+      color: #ffffff;
+      font-size: 30px;
+      font-family: $f-bold;
+      float: inherit;
+      display: block;
+      border-top-left-radius: 0;
+border-bottom-left-radius: 0;
+      @include for-phone-only {
+        font-size: 20px;
+      }
+    }
+
+    h2 {
+      display: inline-block;
+      background: #D848611A;
+      padding: 20px 25px;
+      text-align: center;
+      border-radius: 5px;
+      font-size: 21px;
+      font-family: $f-bold;
+      color: $color2;
+      position: inherit;
+      top: inherit;
+      right: inherit;
+      display: block;
+      border-top-right-radius: 0;
+border-bottom-right-radius: 0;
+      @include for-phone-only {
+        padding: 18px 25px;
+        // top: -50px;
+        // right: 30px;
+        font-size: 13px;
+      }
+    }
+    .head{
+      background-color: transparent;
+      font-size: 40px;
+      top: -18px;
+      @include for-tablet{
+        font-size: 25px;
+      }
+      @include for-phone-only {
+        font-size: 20px;
+      }
+    }
+  }
+}
+
+// stepper phone
+
+.stepper-phone {
+  background: #D848610D;
+  height: 146px;
+
+  .stepper-number {
+    margin-top: 35px;
+    text-align: center;
+
+    span {
+      background-color: $color2;
+      padding: 10px 25px;
+      border-radius: 5px;
+      color: #ffffff;
+      font-size: 30px;
+      font-family: $f-bold;
+      float: right;
+
+      @include for-phone-only {
+        font-size: 20px;
+      }
+    }
+
+    h2 {
+      display: inline-block;
+      background: #D848611A;
+      padding: 20px 25px;
+      text-align: center;
+      border-radius: 5px;
+      font-size: 21px;
+      font-family: $f-bold;
+      color: $color2;
+      position: relative;
+      top: 0;
+      right: -50px;
+
+      @include for-phone-only {
+        padding: 18px 25px;
+        top: -18px;
+        right: -6px;
+        font-size: 13px;
+      }
+    }
+  }
+
+  .stepper-span {
+    display: block;
+    width: 40px;
+    height: 2px;
+    position: absolute;
+    left: -3px;
+    top: 66px;
+    background-color: #D848611A;
+    @include for-phone-only {
+      top: 60px;
+
+    }
+    @include for-tablet {
+      left: 10px;
+      width: 58px;
+    }
+  }
+
+  .stepper-span2 {
+    display: block;
+    width: 40px;
+    height: 2px;
+    position: absolute;
+    left: -3px;
+    top: 66px;
+    background-color: $color2;
+    @include for-phone-only {
+      top: 60px;
+
+    }
+    @include for-tablet {
+      left: 10px;
+      width: 58px;
+    }
+  }
+
+  // ////////////////////////////////
+  .stepper-number2 {
+    margin-top: 35px;
+    text-align: center;
+
+    span {
+      background-color: #D848611A;
+      padding: 10px 25px;
+      border-radius: 5px;
+      color: $color2;
+      font-size: 30px;
+      font-family: $f-bold;
+      float: right;
+
+      @include for-phone-only {
+        font-size: 20px;
+      }
+    }
+
+    h2 {
+      display: inline-block;
+      background: #D848611A;
+      padding: 20px 25px;
+      text-align: center;
+      border-radius: 5px;
+      font-size: 21px;
+      font-family: $f-bold;
+      color: $color2;
+      position: relative;
+      top: 0;
+      right: -50px;
+    }
+  }
+
+}
+
+// personal section
+
+.personal {
+  margin-top: 30px;
+
+  @include for-phone-only {
+    padding: 10px;
+    overflow: hidden;
+  }
+
+  .progress-bar {
+    background-color: $color1;
+  }
+
+  .personal-header {
+    h2 {
+      font-size: 40px;
+      text-align: right;
+      font-family: $f-bold;
+      color: $min-color;
+
+      @include for-phone-only {
+        font-size: 30px;
+      }
+    }
+
+    p {
+      font-size: 20px;
+      text-align: right;
+      color: $color1;
+      padding-top: 5px;
+      margin-bottom: 10px !important;
+      @include for-phone-only {
+        font-size: 16px;
+      }
+    }
+  }
+
+  form {
+    .confirm-mob {
+      position: absolute;
+      bottom: 31px;
+      left: 31px;
+      color: #23C7B4;
+      font-size: 12px;
+      cursor: pointer;
+
+      &:hover {
+        color: #23C7B4;
+      }
+    }
+    .confirm-verfied{
+      position: absolute;
+      bottom: 29px;
+      left: 31px;
+      width: 30px;
+      height: 30px;
+      // display: none;
+   }
+
+    h2 {
+      font-size: 25px;
+      text-align: right;
+      font-family: $f-bold;
+      color: $min-color;
+      padding-top: 30px;
+
+      @include for-tablet {
+        font-size: 20px;
+      }
+    }
+
+    p {
+      font-size: 15px;
+      text-align: right;
+      color: $color1;
+      padding-top: 5px;
+      margin-bottom: 10px !important;
+      @include for-tablet {
+        font-size: 11px;
+      }
+    }
+
+    input[type=number]::-webkit-inner-spin-button,
+    input[type=number]::-webkit-outer-spin-button {
+      -webkit-appearance: none;
+      -moz-appearance: none;
+
+      appearance: none;
+      margin: 0;
+    }
+
+    input[type=number]::-webkit-inner-spin-button,
+    input[type=number]::-webkit-outer-spin-button {
+      -webkit-appearance: none;
+      margin: 0;
+    }
+
+    input[type=number] {
+      -moz-appearance: textfield;
+    }
+
+    input {
+      border-radius: 5px;
+      border: 1px solid #f8f8fb;
+      background: #F8F8FB;
+      color: $color1;
+      height: 60px;
+      text-indent: 15px;
+      font-size: 20px;
+      margin-bottom: 10px;
+      padding-left: 0;
+      padding-right: 0;
+
+      &:focus {
+        color: $min-color;
+        background: #F8F8FB;
+        box-shadow: none;
+        border: 1px solid $min-color;
+      }
+
+      @include for-phone-only {
+        font-size: 14px;
+      }
+
+      @include for-tablet {
+        font-size: 17px;
+      }
+    }
+
+    .myselect2 {
+      .input-hidden {
+        display: none;
+      }
+
+      height: 60px;
+      border-radius: 5px;
+      background: #F8F8FB;
+      width: 100%;
+      border: none;
+      text-indent: 15px;
+      font-size: 20px;
+      display: block;
+      text-align: right;
+      line-height: 60px;
+      background-image: url("../img/Icons/drop_down_gray.png");
+      background-repeat: no-repeat;
+      background-position: top 15px left 15px;
+      background-size: 30px 30px;
+      @include for-tablet {
+        font-size: 16px;
+        background-position: top 15px left ;
+
+      }
+
+      .dropdown-toggle {
+        color: $color1;
+
+        &:after {
+          margin-right: 23%;
+          margin-left: 0;
+          content: "";
+          border-top: .3em solid transparent;
+          border-right: .3em solid transparent;
+          border-bottom: 0;
+          border-left: .3em solid transparent;
+        }
+
+        .flag {
+          width: 30px;
+          height: 30px;
+          margin-left: 15px;
+
+          @include for-tablet {
+            width: 25px;
+            height: 25px;
+            margin-left: 0;
+          }
+
+        }
+      }
+
+      ul.dropdown-menu {
+        margin: 0;
+        padding: 10px 0;
+        top: 14px !important;
+        left: -11px !important;
+        cursor: pointer;
+
+        .flag {
+          width: 20px;
+          height: 20px;
+        }
+
+        .my-item {
+          height: 38px;
+          line-height: 33px;
+          text-align: right;
+          padding: 0;
+        }
+      }
+
+      &:focus {
+        outline: -webkit-focus-ring-color auto 0;
+        border: 1px solid $min-color;
+
+
+      }
+
+      @include for-phone-only {
+        margin-bottom: 10px;
+      }
+    }
+
+    .myselect {
+      .input-hidden {
+        display: none;
+      }
+
+      height: 60px;
+      border-radius: 5px;
+      background: #F8F8FB;
+      color: $color1;
+      width: 100%;
+      border: 1px solid #f8f8fb;
+      text-indent: 15px;
+      font-size: 20px;
+      display: block;
+      text-align: right;
+      line-height: 60px;
+      background-image: url("../img/Icons/drop_down_gray.png");
+      background-repeat: no-repeat;
+      background-position: top 15px left 15px;
+      background-size: 30px 30px;
+
+      @include for-tablet {
+        font-size: 16px;
+        background-position: top 15px left ;
+
+      }
+
+      .dropdown-toggle {
+        color: $color1;
+
+        &:after {
+          margin-right: 23%;
+          margin-left: 0;
+        }
+
+        .flag {
+          width: 30px;
+          height: 30px;
+          margin-left: 15px;
+        }
+      }
+
+      ul.dropdown-menu {
+        margin: 0;
+        padding: 10px 0;
+        top: 14px !important;
+        left: -11px !important;
+        height: 250px;
+        overflow-y: scroll;
+
+        .flag {
+          width: 20px;
+          height: 20px;
+        }
+
+        .my-item {
+          height: 38px;
+          line-height: 33px;
+          text-align: right;
+          padding: 0;
+        }
+      }
+
+      &:focus {
+        outline: -webkit-focus-ring-color auto 0;
+        border: 1px solid $min-color;
+
+
+      }
+
+      @include for-phone-only {
+        margin-bottom: 10px;
+      }
+    }
+
+    .myselect::-ms-expand {
+      display: none;
+    }
+
+    .myselect2 {
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      appearance: none;
+    }
+
+    .myselect {
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      appearance: none;
+    }
+
+    .myselect:-moz-focusring {
+      color: transparent;
+      text-shadow: 0 0 0 #000;
+    }
+
+    .confirm-email {
+      color: $color2;
+      font-size: 15px;
+      padding-top: 10px;
+      float: left;
+    }
+
+    .confirm-email:hover {
+      color: $color2;
+
+    }
+
+    .next-btn {
+      height: 60px;
+      width: 100%;
+      background-color: $min-color;
+      color: #ffffff;
+      font-size: 25px;
+      padding: 10px;
+      margin-top: 60px;
+      margin-bottom: 60px;
+    }
+  }
+
+  // stepper 2
+  .popup-jobs {
+    background-color: #F8F8FB;
+    border-radius: 5px;
+    height: 60px;
+    cursor: pointer;
+    text-align: right;
+
+    p {
+      line-height: 44px;
+      text-indent: 15px;
+      color: $color1;
+      font-size: 20px;
+    }
+  }
+
+  .job-spec {
+    background-color: #F8F8FB;
+    border-radius: 5px;
+    height: 60px;
+    line-height: 60px;
+    text-align: right;
+    text-indent: 15px;
+
+    a {
+      font-size: 15px;
+      color: $color1;
+      background: #ffffff;
+      border-radius: 5px;
+      padding: 5px 15px;
+      height: 40px;
+      margin-left: 30px;
+    }
+  }
+
+  .box-card {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #F8F8FB;
+    padding-top: 10px;
+
+    .skils-card {
+      width: auto;
+      height: 40px;
+      margin-left: 5px;
+      background-color: #fff;
+      padding: 6px 15px;
+      margin-bottom: 20px;
+      border-radius: 5px;
+      margin-right: 10px;
+
+      img {
+        width: 20px;
+        height: 20px;
+        margin-left: 10px;
+      }
+
+      span {
+        font-size: 15px;
+        color: $min-color;
+      }
+    }
+
+    .skils-card2 {
+      width: auto;
+      height: 40px;
+      margin-left: 5px;
+      background-color: #fff;
+      padding: 6px 15px;
+      margin-bottom: 20px;
+      border-radius: 5px;
+      margin-right: 10px;
+
+      span {
+        font-size: 15px;
+        color: $min-color;
+      }
+    }
+  }
+
+  .prev-btn {
+    height: 60px;
+    width: 100%;
+    background-color: #ffffff;
+    border: 1px solid $min-color;
+    color: $min-color;
+    font-size: 25px;
+    padding: 10px;
+    margin-top: 60px;
+    margin-bottom: 60px;
+  }
+
+  .job-now {
+    background-color: #F8F8FB;
+    border-radius: 5px;
+    height: 60px;
+    line-height: 40px;
+    text-align: right;
+    text-indent: 5px;
+    padding: 10px;
+    margin-top: 30px;
+
+    .check-label {
+      span {
+        color: $color1;
+        cursor: pointer;
+        font-size: 20px;
+      }
+
+      input[type="checkbox"] {
+        display: none;
+      }
+
+      input[type="checkbox"]+span:before {
+        content: '';
+        background-image: url("../img/Icons/checkbox_outline.png");
+        background-size: cover;
+        width: 20px;
+        height: 20px;
+        display: inline-block;
+        position: relative;
+        top: 5px;
+        margin-left: 15px;
+      }
+
+      input[type="checkbox"]:checked+span:before {
+        background-image: url("../img/Icons/checkbox_done.png");
+      }
+
+      input[type="checkbox"]:checked+span {
+        color: $color2;
+      }
+    }
+
+    img {
+      width: 20px;
+      height: 20px;
+      margin-left: 20px;
+    }
+  }
+
+  .mytextarea {
+    margin-top: 30px;
+    text-align: right;
+    display: block;
+    width: 100%;
+    height: 244px;
+    background: #f8f8fb;
+    border: none;
+    border-radius: 5px;
+    font-size: 20px;
+    color: $color1;
+    text-indent: 15px;
+    padding-top: 15px;
+    resize: none;
+
+    &:focus {
+      outline: -webkit-focus-ring-color auto 0;
+      border: 1px solid $min-color;
+    }
+  }
+
+  .country-job {
+    margin-top: 25px;
+    float: right;
+
+    span {
+      padding: 2px 25px;
+      color: $min-color;
+      font-size: 30px;
+      border-radius: 5px;
+      font-family: $f-bold;
+      background-color: #29294D1A;
+    }
+  }
+}
+
+.msg-model {
+  .modal-content {
+    background: #F8F8FB;
+    box-shadow: 0 0 20px #3333330D;
+    width: 635px;
+    height: 444px;
+    padding: 60px 30px;
+    text-align: right;
+    border-radius: 5px;
+
+    @include for-phone-only {
+      padding: 20px 10px 0 0;
+      margin-top: 90px;
+      height: 315px;
+      width: 100%;
+    }
+
+    @include for-tablet {
+      padding: 40px 30px 50px;
+      height: 390px;
+    }
+  }
+
+  .modal-body {
+    h2 {
+      letter-spacing: 0;
+      color: $min-color;
+      font-size: 40px;
+      font-family: $f-bold;
+      opacity: 1;
+
+      @include for-phone-only {
+        font-size: 20px;
+      }
+
+      @include for-tablet {
+        font-size: 35px;
+      }
+    }
+
+    p {
+      color: $color1;
+      font-size: 19px;
+      margin-bottom: 30px;
+
+      @include for-phone-only {
+        font-size: 15px;
+      }
+    }
+    input[type=number]::-webkit-inner-spin-button,
+    input[type=number]::-webkit-outer-spin-button {
+      -webkit-appearance: none;
+      -moz-appearance: none;
+
+      appearance: none;
+      margin: 0;
+    }
+
+    input[type=number]::-webkit-inner-spin-button,
+    input[type=number]::-webkit-outer-spin-button {
+      -webkit-appearance: none;
+      margin: 0;
+    }
+
+    input[type=number] {
+      -moz-appearance: textfield;
+    }
+
+    .myinput {
+      width: 100%;
+      height: 60px;
+      margin-bottom: 50px;
+      text-indent: 15px;
+      font-size: 20px;
+      color: $color1;
+      background: #FFFFFF;
+      border-radius: 5px;
+      border: none;
+
+      &:focus {
+        outline: -webkit-focus-ring-color auto 0;
+        border: 1px solid $min-color;
+      }
+
+      @include for-phone-only {
+        width: 95%;
+        font-size: 15px;
+      }
+    }
+
+    .forget-btn {
+      background-color: $min-color;
+      color: #FFFFFF;
+      font-size: 25px;
+      border-radius: 5px;
+      padding: 5px 60px;
+
+      @include for-phone-only {
+        font-size: 20px;
+      }
+    }
+
+    .remeber {
+      font-size: 20px;
+      text-align: center;
+      color: $color2;
+
+      @include for-phone-only {
+        width: 95%;
+        font-size: 17px;
+      }
+    }
+
+    .myspan {
+      width: 100%;
+      height: 1px;
+      background-color: $color1;
+      margin-top: 40px;
+    }
+
+    .enter-content {
+      h3 {
+        font-size: 25px;
+        font-family: $f-bold;
+        text-align: right;
+        margin-top: 40px;
+        color: $min-color;
+        display: inline-block;
+        padding-left: 50px;
+
+        @include for-phone-only {
+          font-size: 20px;
+          padding-left: 25px;
+        }
+      }
+
+      img {
+        width: 65px;
+        height: 65px;
+        margin-left: 20px;
+
+        @include for-phone-only {
+          width: 50px;
+          height: 50px;
+        }
+      }
+    }
+  }
+}
+
+.confirm-model {
+
+  .modal-content {
+    background: #F8F8FB;
+    box-shadow: 0 0 20px #3333330D;
+    width: 635px;
+    height: 407px;
+    padding: 60px 95px 0 0;
+    text-align: right;
+    border-radius: 5px;
+
+    @include for-phone-only {
+      padding: 20px 10px 0 0;
+      margin-top: 90px;
+      height: 315px;
+      width: 100%;
+    }
+
+    @include for-tablet {
+      padding: 40px 30px 50px;
+      height: 390px;
+    }
+  }
+
+  .modal-body {
+    .confirm-emial {
+      background: #D4EDDA;
+      margin-bottom: 15px;
+      border-radius:5px;
+      width: 65px;
+      height: 65px;
+
+      img {
+        width: 46px;
+        height: 40px;
+        margin-top: 12px;
+        margin-right: 9px;
+      }
+    }
+
+    @include for-phone-only {
+      padding: 20px 10px 0 0;
+    }
+
+    @include for-tablet {
+      padding: 40px 10px 50px;
+      height: 365px;
+    }
+
+    h2 {
+      letter-spacing: 0;
+      color: $min-color;
+      font-size: 32px;
+      font-family: $f-bold;
+      opacity: 1;
+      margin-bottom: 10px;
+
+      @include for-phone-only {
+        font-size: 20px;
+      }
+
+      @include for-tablet {
+        font-size: 35px;
+      }
+    }
+
+    p {
+      color: $color1;
+      font-size: 19px;
+      margin-bottom: 40px;
+
+      @include for-phone-only {
+        font-size: 15px;
+      }
+    }
+
+    .done-btn {
+      background-color: $min-color;
+      color: #FFFFFF;
+      font-size: 25px;
+      border-radius: 5px;
+      padding: 5px 60px;
+    }
+  }
+}
+
+
+.choose-model {
+  .modal-dialog {
+    max-width: 1100px !important;
+  }
+
+  .modal-content {
+    box-shadow: 0 0 20px #3333330D;
+    padding: 60px 30px;
+    text-align: right;
+    border-radius: 5px;
+
+    @include for-phone-only {
+      padding: 20px 10px 0 0;
+    }
+
+    @include for-tablet {
+      padding: 40px 30px 50px;
+      height: 390px;
+    }
+  }
+
+  .modal-body {
+    form {
+      h2 {
+        color: $min-color;
+        font-size: 40px;
+        text-align: right;
+        padding-bottom: 30px;
+        font-family: $f-bold;
+      }
+
+      .job-box {
+        background-color: #f8f8fb;
+        padding: 15px;
+        min-height: 435px;
+
+        .job-header {
+          border-bottom: 1px solid $color1;
+          margin-bottom: 15px;
+
+          h3 {
+            color: $min-color;
+            font-size: 20px;
+            text-align: right;
+            padding-bottom: 15px;
+          }
+
+          .input-serch {
+            color: $min-color;
+            font-size: 20px;
+            text-align: right;
+            padding-bottom: 8px;
+            color: $min-color;
+            position: relative;
+
+            input {
+              border: none;
+              background-color: #f8f8fb;
+              text-indent: 23px;
+
+              &:focus {
+                outline: -webkit-focus-ring-color auto 0;
+                border: 1px solid $min-color;
+              }
+            }
+
+            i {
+              position: absolute;
+              top: 7px;
+            }
+          }
+
+          span {
+            float: left;
+          }
+        }
+
+        .job-name {
+          a {
+            color: $color1;
+            font-size: 15px;
+            text-align: right;
+            display: block;
+            padding-bottom: 15px;
+          }
+
+          img {
+            width: 16px;
+            height: 16px;
+            margin-left: 15px;
+          }
+
+          .check-label {
+            span {
+              cursor: pointer;
+            }
+
+            input[type="checkbox"] {
+              display: none;
+            }
+
+            input[type="checkbox"]+span:before {
+              content: '';
+              background-image: url("../img/Icons/checkbox_outline.png");
+              background-size: cover;
+              width: 20px;
+              height: 20px;
+              display: inline-block;
+              position: relative;
+              top: 5px;
+              margin-left: 15px;
+            }
+
+            input[type="checkbox"]:checked+span:before {
+              background-image: url("../img/Icons/checkbox_done.png");
+            }
+
+            input[type="checkbox"]:checked+span {
+              color: $color2;
+            }
+          }
+
+          .active {
+            color: $color2;
+          }
+        }
+      }
+
+      .save-btn {
+        background-color: $min-color;
+        color: #FFFFFF;
+        font-size: 25px;
+        border-radius: 5px;
+        width: 100%;
+        float: left;
+      }
+    }
+  }
+}

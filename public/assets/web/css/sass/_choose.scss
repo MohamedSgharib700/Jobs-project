@@ -1,0 +1,133 @@
+.choose {
+  background: url("./../img/chooseacount_bg.jpg")  no-repeat;
+  -moz-transition: all ease-in-out .5s;
+  -webkit-transition: all ease-in-out .5s;
+  -ms-transition: all ease-in-out .5s;
+  -o-transition: all ease-in-out .5s;
+transition: all ease-in-out .5s;
+  // width: 100%;
+  height: 990px;
+  overflow: hidden;
+
+  @include for-phone-only {
+    height: 630px;
+
+  }
+
+  @include for-tablet {
+    height: 930px;
+  }
+
+  .choose-form {
+    background: #F8F8FB 0% 0% no-repeat padding-box;
+    box-shadow: 0px 0px 20px #3333330D;
+    margin-top: 181px;
+    width: 632px;
+    padding: 60px 95px 60px 95px;
+    text-align: right;
+    border-radius: 5px;
+
+    @include for-phone-only {
+      padding: 20px 10px 0px 0px;
+      margin-top: 100px !important;
+      height: 375px;
+      width: 100%;
+    }
+
+    @include for-tablet {
+      padding: 40px 30px 50px 30px;
+      height: 390px;
+      margin-top: 200px !important;
+    }
+
+    h2 {
+      letter-spacing: 0;
+      color: $min-color;
+      font-size: 40px;
+      font-family: $f-bold;
+      padding-bottom: 10px;
+      opacity: 1;
+
+      @include for-phone-only {
+        font-size: 20px;
+      }
+
+      @include for-tablet {
+        font-size: 35px;
+      }
+    }
+
+    p {
+      color: $color1;
+      font-size: 18px;
+      margin-bottom: 30px;
+
+      @include for-phone-only {
+        font-size: 15px;
+      }
+    }
+
+
+    .search-job {
+      height: 60px;
+      width: 100%;
+      background-color: #FFFFFF;
+      padding: 5px;
+      margin-bottom: 30px;
+
+      label {
+        font-size: 25px;
+        color: $color1;
+        text-align: right;
+        display: inline-block;
+        line-height: 45px;
+        margin-right: 15px;
+        cursor: pointer;
+
+        @include for-phone-only {
+          font-size: 20px;
+        }
+
+        &:focus {
+          color: $color2;
+        }
+
+        #seeker {
+          display: none;
+        }
+
+        #owner {
+          display: none;
+        }
+
+        img {
+          width: 25px;
+          height: 25px;
+          margin-left: 15px;
+
+          @include for-phone-only {
+            width: 20px;
+            height: 20px;
+          }
+        }
+      }
+    }
+
+
+    .sign-now {
+      background-color: $min-color;
+      color: #FFFFFF;
+      font-size: 25px;
+      border-radius: 5px;
+      height: 60px;
+      padding: 8px 60px;
+
+      @include for-phone-only {
+        font-size: 20px;
+      }
+    }
+
+
+  }
+
+}

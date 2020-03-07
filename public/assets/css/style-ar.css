@@ -1,0 +1,440 @@
+@font-face {
+  font-family: "Tajawal-b";
+  src: url(../fonts/fonts/Bahij_light.ttf), url(../fonts/fonts/Bahij_SemiBold.ttf);
+}
+
+body {
+  direction: rtl;
+  text-align: right;
+  font-family: Tajawal-b;
+}
+
+h4 {
+  font-family: "Tajawal-b" !important;
+}
+
+.navbar-expand-lg .navbar-nav .dropdown-menu {
+  text-align: right;
+  direction: rtl;
+}
+
+.btn-edit {
+  background-color: #42a695;
+  color: #fff;
+}
+
+.btn-edit:hover {
+  color: #fff;
+  background-color: #42a695;
+}
+
+#back-to-top {
+  background-color: #42a695;
+}
+
+.card .card-header h4 {
+  font-weight: 800;
+  color: #005a4e;
+}
+
+.my-bg-primary {
+  background-color: #13A651;
+}
+
+.card-footer .male:before {
+  content: '';
+  width: 10px;
+  height: 10px;
+  background-color: #01b8ff;
+  display: inline-block;
+  margin-left: 5px;
+}
+
+.card-footer .fmale:before {
+  content: '';
+  width: 10px;
+  height: 10px;
+  background-color: pink;
+  display: inline-block;
+  margin-left: 5px;
+}
+
+.card-footer .open:before {
+  content: '';
+  width: 10px;
+  height: 10px;
+  background-color: blue;
+  display: inline-block;
+  margin-left: 5px;
+}
+
+.card-footer .done:before {
+  content: '';
+  width: 10px;
+  height: 10px;
+  background-color: green;
+  display: inline-block;
+  margin-left: 5px;
+}
+
+.card-footer .rev:before {
+  content: '';
+  width: 10px;
+  height: 10px;
+  background-color: red;
+  display: inline-block;
+  margin-left: 5px;
+}
+
+.card .card-header .btn-add {
+  width: auto;
+  height: 40px;
+  border-radius: 5px;
+  padding-right: 15px;
+  font-weight: 600;
+  background-color: #42a695;
+  color: #fff;
+  padding-left: 15px;
+}
+
+.btn-add {
+  height: 40px;
+  border-radius: 5px;
+  padding-right: 15px;
+  font-weight: 600;
+  background-color: #42a695;
+  color: #fff;
+  padding-left: 15px;
+}
+
+.SumoSelect>.CaptionCont>span {
+  width: 80%;
+  height: 100%;
+}
+
+.card .card-header .form-control {
+  height: 40px;
+}
+
+/* .SumoSelect > .optWrapper > .options li.opt label, .SumoSelect > .CaptionCont, .SumoSelect .select-all > label{
+  margin-right: 31px;
+} */
+.SumoSelect>.optWrapper {
+  width: 90%;
+}
+
+.SumoSelect>.CaptionCont>label {
+  right: inherit;
+  left: 0;
+  top: 5px;
+}
+
+.SumoSelect>.optWrapper>.options li.opt label, .SumoSelect>.CaptionCont, .SumoSelect .select-all>label {
+  margin-right: 35px;
+}
+
+/* .SumoSelect > .CaptionCont{
+  border: none;
+} */
+.SumoSelect>.CaptionCont>span {
+  padding-right: inherit;
+  padding-left: 30px;
+}
+
+.card-header .search-element {
+  position: relative;
+}
+
+.card-header .search-element .form-control {
+  height: 40px;
+}
+
+.card-header .search-element .Search-icon {
+  position: absolute;
+  top: 6px;
+  left: 12px;
+}
+
+/* .table td label,
+.table th label{
+  position: relative;
+} */
+/* .table td label span,
+.table th label span{
+  position: absolute;
+  top: 10px;
+} */
+.table td label input,
+.table th label input {
+  display: none;
+}
+
+/* .table td label span:before,
+.table th label span:before {
+  content: url(../img/unchecked_gray.png);
+  margin-top: 10px;
+} */
+
+/* .table td label input:checked+span:before,
+.table th label input:checked+span:before {
+  content: url(../img/checked_green.png);
+} */
+
+/*Style modal*/
+.modal .modal-header .close {
+  margin-right: auto;
+  margin-left: 0;
+}
+
+.modal .modal-footer {
+  justify-content: flex-start;
+}
+
+.modal .modal-body ul {
+  display: inline-block;
+  margin-left: 15px;
+}
+
+.modal-footer> :not(:last-child) {
+  margin-left: .25rem;
+}
+
+.inclick {
+  color: #13A651;
+  cursor: pointer;
+}
+
+.back i,
+.back a {
+  color: #fff;
+  font-weight: bold;
+}
+
+/*Style Button*/
+.badge-success {
+  background-color: #42a695;
+  font-weight: 600;
+}
+
+.badge-success,
+.badge-success,
+.badge-cyan,
+.badge-danger {
+  font-weight: 600;
+}
+
+.badge-success2 {
+  background-color: green;
+}
+
+.first-ul {
+  width: 100%;
+  /* border-left: 1px solid #eee; */
+  text-align: center;
+}
+
+.first-ul li span {
+  width: 90%;
+  margin-bottom: 15px;
+}
+
+.sacend-ul {
+  width: 40%;
+  text-align: center;
+}
+
+.sacend-ul li span {
+  width: 90%;
+  margin-bottom: 15px;
+}
+
+.first-ul li .badge-danger,
+.first-ul li .badge-cyan,
+.first-ul li .badge-success,
+.first-ul li .badge-success2 {
+  font-size: 16px;
+}
+
+.back a {
+  display: block;
+  width: 200px;
+}
+
+/* .table-add {
+  display: block;
+  width: 100%;
+
+}
+ .btn-rev{
+  width: 100%;
+  height:40px;
+  border-radius: 0px;
+  color:
+} */
+/*
+.table tbody td .btn{
+  border-radius: 4px ;
+} */
+/**/
+/*********/
+/* .side-menu .active{
+  background-color: #13A651;
+    color: #fff;
+}
+.side-menu__item.active .side-menu__icon, .side-menu__item:hover .side-menu__icon, .side-menu__item:focus .side-menu__icon{
+      color: #fff;
+} */
+/* .table label input + span:before{
+  content:url(../img/unchecked_gray.png);
+position: absolute;
+right: -24px;
+top: 1px;
+}
+
+.table th label input:checked + span:before{
+       content:url(../img/checked_green.png);
+   } */
+/* .app-content .section .row .col-6 img{
+    width: 125px;
+
+} */
+/* .app-content{
+  margin-top: 46px;
+} */
+/* .section-body{
+
+} */
+/*Navbar*/
+/* .navbar .form-inline .form-control{
+  padding-right: 20px;
+padding-left: 41px;
+margin-left: -38px;
+margin-right: 0;
+}
+.app-sidebar {
+  left: inherit;
+  right: 0;
+}
+.app.sidenav-toggled .app-sidebar{
+  right: -230px;
+} */
+/**/
+/* .app-content
+{
+  margin-left: 0;
+  margin-right: 230px;
+}
+.app.sidenav-toggled .app-content{
+    margin-right:0;
+} */
+div.dataTables_wrapper div.dataTables_filter {
+  display: none;
+}
+.lbl {
+  border: 1px solid #e9e9f0;
+  height: 50px;
+  width: calc(100%/4);
+  height: 50px;
+  margin-left: 0;
+  float: right;
+}
+
+.lbl span {
+  display: block;
+  text-align: center;
+  line-height: 50px;
+  height: 100%;
+  cursor: pointer;
+}
+
+.lbl input {
+  display: none;
+}
+
+.lbl input[type=radio]:checked+span {
+  background-color: #42a695;
+  color: #fff;
+}
+
+.myfillter h4 {
+  font-size: 16px
+}
+
+.myfillter input {
+  height: 40px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  text-indent: 5px;
+  border-radius: 5px;
+}
+.form-group select,
+.myfillter select {
+  height: 40px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  /* text-indent: 5px; */
+  border-radius: 5px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background: url(../img/Arrow-Dropdown.png) center left no-repeat;
+}
+
+
+/*SELECT COMPO BOX*/
+.SumoSelect > .CaptionCont{
+  width: 100%;
+  margin-right: 0 !important;
+  height: 40px ;
+  text-align: right;
+}
+.SumoSelect.open > .optWrapper{
+  top: 42px;
+  width: 100%;
+text-align: right;
+}
+.nav-pills .nav-link.active, .nav-pills .show > .nav-link, .nav-pills .nav-item .nav-link.active{
+  background: #42a695;
+}
+.my-bg-primary{
+  /* background:url(../img/bg.jpg)no-repeat; */
+  background-color: #fff;
+}
+.single-page{
+  margin-right: auto;
+  margin-left: auto;
+  top: 220px;
+}
+.overlay-img{
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+.overlay-img img{
+  width: 100%;
+height: 100%;
+}
+
+/*Media*/
+@media (min-width: 0) and (max-width:576px) {
+.nav .nav-item{
+  text-align: center;
+  margin-right: 0;
+}
+#myTab3{
+  margin: 0 !important;
+  padding: 0 !important;
+}
+.main-footer{
+  padding: 20px 30px 20px 30px;
+
+}
+
+ }
+ @media (min-width: 576px) and (max-width: 991.98px) {
+   #myTab3{
+     margin: 0 !important;
+     padding: 0 !important;
+   }
+  }

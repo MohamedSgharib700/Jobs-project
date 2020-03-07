@@ -1,0 +1,388 @@
+.search {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  form {
+    width: 100%;
+
+    .serch-box {
+      letter-spacing: -1px;
+      margin-bottom: 30px;
+
+      h3 {
+        font-family: $f-bold;
+        font-size: 25px;
+        color: $color2;
+        display: inline-block;
+        margin-bottom: 30px;
+        @include for-tablet{
+          font-size: 20px;
+        }
+      }
+
+      span {
+        float: left;
+        font-family: $f-bold;
+        font-size: 20px;
+        color: #7E7E94;
+        @include for-tablet{
+          font-size: 17px;
+        }
+      }
+
+      input {
+        background-color: #fff;
+        border: 1px solid #7E7E94;
+        height: 60px;
+        border-radius: 5px;
+        text-indent: 10px;
+
+        &:focus {
+          border: 1px solid $color3;
+          color: #7E7E94;
+        }
+      }
+    }
+
+    .box-filtter {
+      h3 {
+        color: $color3;
+        font-size: 20px;
+        font-family: $f-bold;
+        margin-bottom: 15px;
+        @include for-tablet{
+          font-size: 17px;
+        }
+      }
+
+      .box-p {
+        background-color: #F8F8FB;
+        border-radius: 5px;
+        position: relative;
+        height: 60px;
+        overflow: hidden;
+        margin-bottom: 15px;
+        cursor: pointer;
+
+        span {
+          display: inline-block;
+          height: 60px;
+          padding-right: 15px;
+          line-height: 60px;
+          color: #7E7E94;
+          font-size: 20px;
+          @include for-tablet{
+            font-size: 17px;
+          }
+        }
+
+        img {
+          position: absolute;
+          left: 12px;
+          top: 20px;
+        }
+
+        .toggle-img {
+          display: none;
+        }
+      }
+
+      .box-ch {
+        background-color: #fff;
+        display: none;
+        margin-bottom: 15px;
+
+        label {
+          position: relative;
+          width: 100%;
+          margin-bottom: 15px;
+          span {
+            color: #7E7E94;
+            font-size: 15px;
+            cursor: pointer;
+          }
+
+          .count {
+            position: absolute;
+            left: 0;
+          }
+        }
+
+        input[type="checkbox"] {
+          display: none;
+        }
+
+        input[type="radio"] {
+          display: none;
+        }
+
+        input[type="checkbox"] + span:before {
+          content: '';
+          background-image: url("../img/Icons/checkbox_outline.png");
+          background-size: cover;
+          width: 20px;
+          height: 20px;
+          display: inline-block;
+          position: relative;
+          top: 5px;
+          margin-left: 15px;
+        }
+
+        input[type="checkbox"]:checked + span:before {
+          background-image: url("../img/Icons/checkbox_done.png");
+        }
+
+        input[type="checkbox"]:checked + .input-name,
+        input[type="checkbox"]:checked + .input-name + .count {
+          color: $color2;
+        }
+
+        input[type="radio"] + span:before {
+          content: '';
+          background-image: url("../img/Icons/checkbox_outline.png");
+          background-size: cover;
+          width: 20px;
+          height: 20px;
+          display: inline-block;
+          position: relative;
+          top: 5px;
+          margin-left: 15px;
+        }
+
+        input[type="radio"]:checked + span:before {
+          background-image: url("../img/Icons/checkbox_done.png");
+        }
+
+        input[type="radio"]:checked + .input-name,
+        input[type="radio"]:checked + .input-name + .count {
+          color: $color2;
+        }
+      }
+    }
+  }
+
+  .Resutl{
+    border: 1px solid transparent;
+
+    box-shadow: 0px 0px 30px #29294D0D;
+    margin-bottom: 30px;
+    transition: all ease-in-out .3s;
+    &:hover{
+        border: 1px solid $color2;
+        border-radius: 5px;
+    }
+    .box-result{
+      display: block;
+      .head-box{
+        padding: 15px;
+        h3{
+          color: $color3;
+          font-size: 24px;
+          font-family: $f-bold;
+          @include for-tablet{
+            font-size: 20px;
+          }
+        }
+        p{
+          font-size: 20px;
+            color: $color3;
+            @include for-tablet{
+              font-size: 13px;
+            }
+        }
+        .dropdown{
+          img{
+            width: 20px;
+            height: 20px;
+            margin-left: 20px;
+          }
+          .btn{
+            background-color: #FBECEF;
+            color: $color2;
+            text-align: right;
+            height: 60px;
+
+            &:focus{
+              box-shadow: none;
+            }
+          }
+          .dropdown-toggle{
+            &:after{
+              position: absolute;
+              left: 10px;
+              top: 11px;
+              border-color: transparent;
+              content: url('../img/Icons/drop_down_gray.png');
+            }
+          }
+          .dropdown-menu{
+          min-width: 15rem;
+            border: none;
+            border-radius: 5px;
+            box-shadow: 0px 0px 50px #7E7E9426;
+            @include for-phone-only{
+                min-width: 20rem;
+            }
+            li{
+              text-align: right;
+              padding-right: 15px;
+              cursor: pointer;
+              span{
+                width: 15px;
+                color: $color3;
+                  cursor: pointer;
+              }
+              input{
+                display: none;
+              }
+              &:active{
+                background-color: transparent;
+              }
+            }
+            .li-form{
+              padding: 0;
+              .btn-add-job{
+                background-color: transparent;
+                height: inherit;
+                border: 0;
+                color: $color2;
+                font-family: $f-bold;
+                img{
+                  margin-left: 15px;
+                }
+              }
+            }
+          }
+        }
+        .drob-result{
+          .dropdown-toggle{
+            &:after{
+              position: absolute;
+              left: 10px;
+              top: 11px;
+              border-color: transparent;
+              content: url('../img/Icons/drop_down_red.png');
+            }
+          }
+        }
+      }
+    }
+    .box-content{
+      display: block;
+      padding: 15px;
+      background-color: #F8F8FB;
+      .box-info{
+        @include for-phone-only{
+          margin-bottom: 20px;
+        }
+        h3{
+          font-size: 20px;
+          font-family: $f-bold;
+          color: $color2;
+          @include for-tablet{
+            font-size: 15px;
+          }
+        }
+        p{
+          font-size: 20px;
+          margin-bottom: 15px;
+          color: $color3;
+          @include for-tablet{
+            font-size: 17px;
+          }
+        }
+        span{
+          font-size: 15px;
+          color: $color3;
+          background-color: #fff;
+          display: inline-block;
+          margin-left: 15px;
+          border-radius: 5px;
+          padding: 5px 15px;
+          margin-bottom: 5px;
+          border-radius: 5px;
+          height: 40px;
+          line-height: 30px;
+          @include for-tablet{
+            font-size: 13px;
+          }
+        }
+      }
+    }
+  }
+  .modal-login{
+    top: 23%;
+
+    .modal-dialog{
+      max-width: 600px;
+      .modal-body{
+        padding-top: 60px;
+        padding-left: 90px;
+        padding-right: 90px;
+        @include for-phone-only{
+          padding-left: 20px;
+    padding-right: 20px;
+        }
+        span{
+          width: 65px;
+          height: 65px;
+          background-color: #D4EDDA;
+          display: block;
+          border-radius: 5px;
+          margin-bottom: 20px;
+          img{
+            width: 55px;
+            height: 55px;
+            margin-left: 4px;
+            margin-right: 4px;
+            margin-top: 4px;
+            display: inline-block;
+          }
+        }
+        h1{
+          color: $color3;
+          font-size: 40px;
+          font-family: $f-bold;
+          margin-bottom: 5px;
+          letter-spacing: -1px;
+          @include for-phone-only{
+          font-size: 30px;
+          }
+        }
+
+        p{
+          color: #7E7E94;
+          font-size: 20px;
+          margin-bottom: 30px;
+          @include for-phone-only{
+          font-size: 18px;
+            margin-bottom: 0;
+          }
+        }
+      }
+      .modal-footer{
+        border-top: none;
+        .btn-signup{
+          background-color: $color3;
+          font-size: 20px;
+          color: #fff;
+          width: 200px;
+          height: 50px;
+          line-height: 30px;
+          @include for-phone-only{
+          font-size: 18px;
+          width: 160px;
+          }
+        }
+        .btn-login{
+          color: $color2;
+          font-size: 20px;
+          @include for-phone-only{
+          font-size: 18px;
+
+          }
+        }
+      }
+    }
+    }
+
+}

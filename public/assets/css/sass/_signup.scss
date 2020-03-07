@@ -1,0 +1,335 @@
+.signup {
+  background: url("./../img/signup_bg.jpg") no-repeat;
+  width: 100%;
+  height: 990px;
+
+  @include for-phone-only {
+    height: 850px;
+  }
+
+  .sign-form {
+    background: #F8F8FB 0% 0% no-repeat padding-box;
+    box-shadow: 0px 0px 20px #3333330D;
+    margin-top: 70px;
+    // width: 635px;
+    // height: auto;
+    padding: 60px 0 60px 0;
+    text-align: right;
+    border-radius: 5px;
+
+    @include for-phone-only {
+      padding: 20px 10px 20px 0px;
+      margin-top: 90px;
+      height: auto;
+      width: 100%;
+    }
+
+    @include for-tablet {
+      padding: 50px 30px 50px 30px;
+      height: auto;
+    }
+
+    .coun-img {
+      width: 30px;
+      height: 30px;
+      position: absolute;
+      bottom: 50px;
+      right: 22px;
+
+      @include for-phone-only {
+        bottom: 32px;
+        width: 25px;
+        height: 25px;
+      }
+    }
+
+    h2 {
+      letter-spacing: 0;
+      color: $min-color;
+      font-size: 40px;
+      font-family: $f-bold;
+      opacity: 1;
+      margin-bottom: 10px;
+
+      @include for-phone-only {
+        font-size: 20px;
+      }
+
+      @include for-tablet {
+        font-size: 35px;
+
+      }
+    }
+
+    p {
+      color: $color1;
+      font-size: 19px;
+      margin-bottom: 20px;
+
+      @include for-phone-only {
+        font-size: 15px;
+      }
+    }
+
+
+    .myinput {
+      width: 100%;
+      height: 60px;
+      margin-bottom: 30px;
+      text-indent: 15px;
+      font-size: 20px;
+      color: $color1;
+      background: #FFFFFF 0% 0% no-repeat padding-box;
+      border-radius: 5px;
+      border: none;
+
+      &:focus {
+        outline: -webkit-focus-ring-color auto 0;
+        border: 1px solid $min-color;
+      }
+
+      @include for-phone-only {
+        width: 95%;
+        font-size: 15px;
+      }
+
+      @include for-tablet {}
+
+
+    }
+
+    .error-msg {
+      position: absolute;
+      left: -255px;
+      top: 10px;
+      background: $color2;
+      color: #FFFFFF;
+      font-size: 15px;
+      border-radius: 5px;
+      padding: 5px 15px;
+      i{
+        color: $color2;
+    position: absolute;
+    right: -6px;
+    top: 7px;
+    font-size: 20px;
+
+      }
+
+      @include for-phone-only {
+        left: 35px;
+        top: 56px;
+        padding: 3px 10px;
+      }
+
+      @include for-tablet {
+        left: 15px;
+        top: 59px;
+        padding: 3px 10px;
+      }
+
+    }
+
+    .success-msg {
+      position: absolute;
+      left: -255px;
+      top: 10px;
+      background: #43784F;
+      color: #FFFFFF;
+      font-size: 15px;
+      border-radius: 5px;
+      padding: 5px 15px;
+      i{
+        color: #43784F;
+    position: absolute;
+    right: -6px;
+    top: 7px;
+    font-size: 20px;
+      }
+
+      @include for-phone-only {
+        left: 5px;
+        top: 56px;
+        padding: 3px 10px;
+      }
+
+      @include for-tablet {
+        left: 15px;
+        top: 59px;
+        padding: 3px 10px;
+      }
+
+    }
+
+    .error {
+      outline: -webkit-focus-ring-color auto 0;
+      border: 1px solid $color2;
+      background-image: url("../../img/Icons/error.png");
+      background-position: 15px 15px;
+      cursor: pointer;
+
+    }
+
+    .success {
+      outline: -webkit-focus-ring-color auto 0;
+      border: 1px solid #43784F;
+      background-image: url("../../img/Icons/verified.png");
+      background-position: 15px 15px;
+      cursor: pointer;
+    }
+
+    .myselect2 {
+      .input-hidden {
+        display: none;
+      }
+
+      height: 60px;
+      border-radius: 5px;
+      background: #fff;
+      width: 100%;
+      border: none;
+      text-indent: 15px;
+      font-size: 20px;
+      display: block;
+      text-align: right;
+      line-height: 60px;
+      background-image: url("../img/Icons/drop_down_gray.png");
+      background-repeat: no-repeat;
+      background-position: top 15px left 15px;
+      background-size: 30px 30px;
+
+      .dropdown-toggle {
+        color: $color1;
+
+        @include for-phone-only {
+          font-size: 18px;
+        }
+
+        &:after {
+          margin-right: 5%;
+          margin-left: 0;
+          content: "";
+          border-top: .3em solid transparent;
+          border-right: .3em solid transparent;
+          border-bottom: 0;
+          border-left: .3em solid transparent;
+        }
+
+        .flag {
+          width: 30px;
+          height: 30px;
+          margin-left: 15px;
+
+          @include for-phone-only {
+            width: 20px;
+            height: 20px;
+            margin-left: 0;
+
+          }
+        }
+      }
+
+      ul.dropdown-menu {
+        margin: 0;
+        padding: 10px 0;
+        top: 14px !important;
+        left: -39px !important;
+
+        .flag {
+          width: 20px;
+          height: 20px;
+        }
+
+        .my-item {
+          height: 38px;
+          line-height: 33px;
+          text-align: right;
+          padding: 0;
+
+          span {
+            &:active {
+              color: $color1;
+            }
+          }
+
+        }
+      }
+
+      &:focus {
+        outline: -webkit-focus-ring-color auto 0;
+      }
+
+      @include for-phone-only {
+        margin-bottom: 10px;
+      }
+    }
+
+    .dropdown-item.active,
+    .dropdown-item:active {
+      background: transparent;
+    }
+
+    .sign-btn {
+      background-color: $min-color;
+      color: #FFFFFF;
+      font-size: 25px;
+      border-radius: 5px;
+      height: 60px;
+      padding: 7px 80px;
+
+      &:focus {
+        box-shadow: none;
+      }
+
+      @include for-phone-only {
+        margin-top: 10px;
+        // margin-right: 50px;
+        font-size: 22px;
+      }
+    }
+
+
+    .myspan {
+      width: 100%;
+      height: 1px;
+      background-color: $color1;
+      margin-top: 40px;
+    }
+
+    .enter-content {
+      width: 100%;
+      h3 {
+        font-size: 25px;
+        font-family: $f-bold;
+        text-align: right;
+        margin-top: 40px;
+        color: $min-color;
+        display: inline-block;
+        padding-left: 50px;
+
+        @include for-phone-only {
+          font-size: 20px;
+          padding-left: 25px;
+        }
+      }
+    a{
+      display: inline-block;
+      margin-right: auto;
+      margin-top: 15px;
+      img {
+        width: 65px;
+        height: 65px;
+        margin-right:20px;
+
+        @include for-phone-only {
+          width: 50px;
+          height: 50px;
+        }
+      }
+    }
+
+    }
+
+  }
+
+}

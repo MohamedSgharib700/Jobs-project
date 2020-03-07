@@ -1,0 +1,197 @@
+.bo-dashboard{
+  padding-top: 30px;
+  .box-all{
+    margin-bottom: 15px;
+    .box-cv{
+      box-shadow: 0 0 30px #29294D0D;
+      padding: 15px;
+      h3{
+        color: $color3;
+        font-size: 24px;
+        font-family: $f-bold;
+        padding-top: 20px;
+        @include for-tablet{
+          font-size: 20px;
+        }
+      }
+      .dropdown{
+        img{
+          width: 20px;
+          height: 20px;
+          margin-left: 20px;
+        }
+        .btn{
+          background-color: #F4F4F6;
+          color: $color2;
+          text-align: right;
+          height: 60px;
+
+          &:focus{
+            box-shadow: none;
+          }
+        }
+        .dropdown-toggle{
+          &:after{
+            position: absolute;
+            left: 10px;
+            top: 11px;
+            border-color: transparent;
+            content: url('../img/Icons/drop_down_red.png');
+          }
+        }
+        .dropdown-menu{
+        min-width: 15rem;
+          border: none;
+          border-radius: 5px;
+          box-shadow: 0px 0px 50px #7E7E9426;
+          @include for-phone-only{
+              min-width: 20rem;
+          }
+          li{
+            text-align: right;
+            padding-right: 15px;
+            cursor: pointer;
+            span{
+              width: 15px;
+              color: $color3;
+                cursor: pointer;
+            }
+            input{
+              display: none;
+            }
+            &:active{
+              background-color: transparent;
+            }
+          }
+          .li-form{
+            padding: 0;
+            .btn-add-job{
+              background-color: transparent;
+              height: inherit;
+              border: 0;
+              color: $color2;
+              font-family: $f-bold;
+              img{
+                margin-left: 15px;
+              }
+            }
+          }
+        }
+      }
+      .drop-accept{
+        .btn{
+          background-color: #F4F4F6;
+          color:#43784F;
+          text-align: right;
+          height: 60px;
+          font-size: 20px;
+          &:focus{
+            box-shadow: none;
+          }
+        }
+        .dropdown-toggle{
+          &:after{
+            position: absolute;
+            left: 10px;
+            top: 11px;
+            border-color: transparent;
+            content: url('../img/Icons/drop_down_gray.png');
+          }
+        }
+      }
+    }
+    .box-contant{
+      background-color: #F8F8FB;
+      padding: 15px;
+      .head-text{
+        color: $color3;
+        font-size: 25px;
+        font-family: $f-bold;
+        margin-bottom: 15px;
+      }
+      h3{
+        font-size: 15px;
+        color: $color2;
+          font-family: $f-bold;
+      }
+      p{
+        font-size: 20px;
+          color: $color3;
+        margin-bottom: 15px;
+
+      }
+      .link{
+        color: $color2;
+        font-size: 20px;
+        text-decoration: underline;
+      }
+      .p-head{
+        font-size: 15px;
+      color: $color2;
+            font-family: $f-bold;
+              margin-bottom: 5px;
+      }
+      .tag{
+        display: inline-block;
+        background-color: #fff;
+        padding: 4px 14px;
+        margin-bottom: 10px;
+        margin-left:15px;
+        height: 40px;
+    line-height: 30px;
+    border-radius: 5px;
+      }
+      .p-head2{
+        font-size: 15px;
+        font-family: $f-bold;
+        color: $color2;
+        margin-bottom: 5px;
+      }
+      .p-content{
+        color: $color3;
+        font-size: 20px;
+      }
+      .p-date{
+        color: #7E7E94;
+        font-size: 20px;
+        margin-bottom: 15px;
+      }
+    }
+  }
+  .statics {
+    margin-top: 30px;
+    .static-header {
+      background-color: #fff;
+      box-shadow: 0 0 30px #29294D0D;
+      padding:22px 15px;
+      height: 90px;
+      h2 {
+        text-align: right;
+        color: $min-color;
+        font-size: 25px;
+        font-family: $f-bold;
+        @include for-tablet {
+          font-size: 18px;
+        }
+        @include for-phone-only {
+          font-size: 16px;
+        }
+      }
+    }
+    .static-box {
+      textarea{
+        height: 350px;
+        resize: none;
+        background-color: #F8F8FB;
+        border: none;
+        padding: 15px;
+      }
+      .btn{
+        background-color: $color3;
+        color: #fff;
+        font-size: 25px;
+        height: 60px;
+      }
+    }
+  }
+}

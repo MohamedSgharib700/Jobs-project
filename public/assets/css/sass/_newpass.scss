@@ -1,0 +1,131 @@
+.newpass {
+  background-image: url("./../img/change_pass_bg.jpg");
+  width: 100%;
+  height: 100vh;
+
+  @include for-phone-only {
+    height: 93vh;
+  }
+
+  .pass-form {
+    background: #F8F8FB 0% 0% no-repeat padding-box;
+    box-shadow: 0px 0px 20px #3333330D;
+    opacity: 0.9;
+    margin-top: 181px;
+    width: 632px;
+    height: 507px;
+    padding: 60px 95px 95px 95px;
+    text-align: right;
+    border-radius: 5px;
+
+    @include for-phone-only {
+      padding: 45px 10px 0px 0px;
+      margin-top: 90px;
+      height: 430px;
+      width: 100%;
+    }
+
+    @include for-tablet {
+      padding: 40px 10px 50px 10px;
+      height: 440px;
+    }
+
+    h2 {
+      letter-spacing: 0;
+      color: $min-color;
+      font-size: 40px;
+      font-family: $f-bold;
+      opacity: 1;
+
+      @include for-phone-only {
+        font-size: 20px;
+      }
+
+      @include for-tablet {
+        font-size: 35px;
+
+      }
+    }
+
+    p {
+      color: $color1;
+      font-size: 19px;
+
+      @include for-phone-only {
+        font-size: 15px;
+      }
+    }
+
+    .myinput {
+      width: 100%;
+      height: 60px;
+      margin-bottom: 30px;
+      text-indent: 15px;
+      font-size: 20px;
+      color: $color1;
+      background: #FFFFFF 0% 0% no-repeat padding-box;
+      border-radius: 5px;
+      border: none;
+
+      &:focus {
+        outline: -webkit-focus-ring-color auto 0;
+      }
+
+      @include for-phone-only {
+        width: 95%;
+      }
+    }
+
+    .sign-btn {
+      background-color: $min-color;
+      color: #FFFFFF;
+      font-size: 25px;
+      border-radius: 5px;
+      padding: 5px 80px 5px 80px;
+    }
+
+    .reset {
+      font-size: 20px;
+      text-align: center;
+      color: $color2;
+    }
+
+    .myspan {
+      width: 100%;
+      height: 1px;
+      background-color: $color1;
+      margin-top: 40px;
+    }
+
+    .enter-content {
+      h3 {
+        font-size: 25px;
+        font-family: $f-bold;
+        text-align: right;
+        margin-top: 40px;
+        color: $min-color;
+        display: inline-block;
+        padding-left: 50px;
+
+        @include for-phone-only {
+          font-size: 20px;
+          padding-left: 25px;
+        }
+      }
+
+      img {
+        width: 65px;
+        height: 65px;
+        margin-left: 20px;
+
+        @include for-phone-only {
+          width: 50px;
+          height: 50px;
+        }
+      }
+
+    }
+
+  }
+
+}

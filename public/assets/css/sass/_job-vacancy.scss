@@ -1,0 +1,276 @@
+.jop-vacancy{
+  padding-top: 30px;
+  padding-bottom: 30px;
+
+  .Resutl2,
+  .Resutl{
+    border: 1px solid transparent;
+    box-shadow: 0px 0px 30px #29294D0D;
+    margin-bottom: 30px;
+    transition: all ease-in-out .3s;
+    &:hover{
+        border: 1px solid $color2;
+        border-radius: 5px;
+    }
+    .box-result{
+      display: block;
+      .head-box{
+        padding: 15px;
+        h3{
+          color: $color3;
+          font-size: 24px;
+          font-family: $f-bold;
+          @include for-tablet{
+            font-size: 20px;
+          }
+        }
+        .head-text{
+          padding-top: 20px;
+        }
+        p{
+          font-size: 20px;
+            color: $color3;
+            @include for-tablet{
+              font-size: 13px;
+            }
+        }
+        .dropdown{
+
+          img{
+            width: 20px;
+            height: 20px;
+            margin-left: 20px;
+          }
+          .btn{
+            background-color: #F4F4F6;
+            color: $color2;
+            text-align: right;
+            height: 60px;
+            font-size: 20px;
+            &:focus{
+              box-shadow: none;
+            }
+          }
+          .dropdown-toggle{
+            &:after{
+              position: absolute;
+              left: 10px;
+              top: 30px;
+              position: absolute;
+              left: 10px;
+              top: 11px;
+              border-color: transparent;
+              content: url('../img/Icons/drop_down_gray.png');
+            }
+          }
+          .dropdown-menu{
+          min-width: 15rem;
+            border: none;
+            border-radius: 5px;
+            box-shadow: 0px 0px 50px #7E7E9426;
+            @include for-phone-only{
+                min-width: 20rem;
+            }
+            li{
+              text-align: right;
+              padding-right: 15px;
+              cursor: pointer;
+              span{
+                width: 15px;
+                color: $color3;
+                  cursor: pointer;
+              }
+              input{
+                display: none;
+              }
+              &:active{
+                background-color: transparent;
+              }
+            }
+            .li-form{
+              padding: 0;
+              .btn-add-job{
+                background-color: transparent;
+                height: inherit;
+                border: 0;
+                color: $color2;
+                font-family: $f-bold;
+                img{
+                  margin-left: 15px;
+                }
+              }
+            }
+          }
+        }
+        .drop-accept{
+          .btn{
+            // background-color: #F4F4F6;
+            color:#43784F;
+            text-align: right;
+            height: 60px;
+            font-size: 20px;
+            &:focus{
+              box-shadow: none;
+            }
+          }
+        }
+        .drop-wait{
+          .btn{
+            // background-color: #F4F4F6;
+            color:#7E7E94;
+            text-align: right;
+            height: 60px;
+            font-size: 20px;
+            &:focus{
+              box-shadow: none;
+            }
+          }
+        }
+      }
+    }
+    .box-content{
+      display: block;
+      padding: 15px;
+      background-color: #F8F8FB;
+      .accept{
+        color: #23C78B;
+      }
+      .wait{
+        color: #7E7E94;
+      }
+      .rejected{
+        color: #D84861;
+      }
+      .all{
+        color: #29294D;
+      }
+      h1{
+        margin-top:30px;
+        font-size: 35px;
+        font-family: $f-bold;
+      }
+      h2{
+        font-size: 25px;
+        font-family: $f-bold;
+            margin-bottom:30px;
+      }
+      .box-info{
+        margin-bottom: 20px;
+
+        h3{
+          font-size: 20px;
+          font-family: $f-bold;
+          color: $color2;
+          @include for-tablet{
+            font-size: 15px;
+          }
+        }
+        p{
+          font-size: 20px;
+          color: $color3;
+          @include for-tablet{
+            font-size: 17px;
+          }
+        }
+        span{
+          font-size: 15px;
+          color: $color3;
+          background-color: #fff;
+          display: inline-block;
+          margin-left: 15px;
+          border-radius: 5px;
+          padding: 5px 15px;
+          margin-bottom: 5px;
+          @include for-tablet{
+            font-size: 13px;
+          }
+        }
+      }
+    }
+  }
+  .Resutl2{
+      border: 1px solid transparent;
+      &:hover{
+        border: 1px solid transparent;
+      }
+  }
+  .statics {
+    margin-top: 30px;
+
+    .static-header {
+      background-color: #fff;
+      box-shadow: 0 0 30px #29294D0D;
+      padding: 22px 15px;
+      height: 90px;
+
+      h2 {
+        text-align: right;
+        color: $min-color;
+        font-size: 25px;
+        font-family: $f-bold;
+        @include for-tablet {
+          font-size: 18px;
+        }
+        @include for-phone-only {
+          font-size: 16px;
+        }
+      }
+    }
+
+    .static-box {
+      background-color: #F8F8FB;
+      padding: 15px;
+
+      h3 {
+        text-align: right;
+        color: $color2;
+        font-size: 15px;
+        font-family: $f-bold;
+        padding-bottom: 5px;
+        @include for-tablet {
+          font-size: 13px;
+        }
+      }
+
+      p {
+        text-align: right;
+        color: $min-color;
+        font-size: 35px;
+        font-family: $f-nourml !important;
+        margin-bottom: 15px !important;
+        @include for-tablet {
+          font-size: 25px;
+        }
+        @include for-phone-only {
+          font-size: 25px;
+        }
+      }
+    }
+
+    .static-box-bo {
+      h3 {
+        text-align: right;
+        color: $color2;
+        font-size: 15px;
+        font-family: $f-bold;
+        padding-bottom: 5px;
+        @include for-tablet {
+          font-size: 13px;
+        }
+      }
+
+      p {
+        text-align: right;
+        color: $min-color;
+        font-size: 20px;
+        font-family: $f-bold;
+        @include for-tablet {
+          font-size: 15px;
+        }
+        @include for-phone-only {
+          font-size: 15px;
+        }
+      }
+    }
+  }
+}

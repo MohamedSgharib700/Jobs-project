@@ -1,0 +1,173 @@
+/*
+Tamplet name : CV World
+coder name Abanoub Milad
+start Date 23/10/2019
+*/
+@import 'sass/_vars';
+@import 'sass/_component';
+@import 'sass/_media';
+
+/*import font*/
+@font-face {
+  font-family: 'cairo-regular';
+  src: url("../fonts/Cairo-Regular.ttf") format('truetype');
+}
+
+@font-face {
+  font-family: 'cairo-Bold';
+  src: url("../fonts/Cairo-Bold.ttf") format('truetype');
+}
+
+p {
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  outline: none;
+
+  &:hover {
+    outline: none;
+    text-decoration: none;
+  }
+}
+
+body {
+  direction: rtl;
+  text-align: right;
+  font-family: $f-nourml;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  direction: rtl;
+  text-align: right;
+
+}
+
+form {
+  input{
+  position: relative;
+      
+  }
+  .error-msg {
+    position: absolute;
+    left: -255px;
+    top: 10px;
+    background: $color2;
+    color: #FFFFFF;
+    font-size: 15px;
+    border-radius: 5px;
+    padding: 5px 15px;
+
+    i {
+      color: $color2;
+      position: absolute;
+      right: -6px;
+      top: 7px;
+      font-size: 20px;
+
+    }
+
+    @include for-phone-only {
+      left: 35px;
+      top: 56px;
+      padding: 3px 10px;
+    }
+
+    @include for-tablet {
+      left: 15px;
+      top: 59px;
+      padding: 3px 10px;
+    }
+
+  }
+
+  .success-msg {
+    position: absolute;
+    left: -255px;
+    top: 10px;
+    background: #43784F;
+    color: #FFFFFF;
+    font-size: 15px;
+    border-radius: 5px;
+    padding: 5px 15px;
+
+    i {
+      color: #43784F;
+      position: absolute;
+      right: -6px;
+      top: 7px;
+      font-size: 20px;
+    }
+
+    @include for-phone-only {
+      left: 5px;
+      top: 56px;
+      padding: 3px 10px;
+    }
+
+    @include for-tablet {
+      left: 15px;
+      top: 59px;
+      padding: 3px 10px;
+    }
+
+  }
+
+  .error {
+    outline: -webkit-focus-ring-color auto 0 !important;
+    border: 1px solid $color2 !important;
+    background-image: url("../../img/Icons/error.png") !important;
+    background-repeat: no-repeat !important;
+    background-position: 15px 15px !important;
+    cursor: pointer !important;
+
+  }
+
+  .success {
+    outline: -webkit-focus-ring-color auto 0 !important;
+    border: 1px solid #43784F !important;
+    background-image: url("../../img/Icons/verified.png") !important;
+    background-repeat: no-repeat !important;
+    background-position: 15px 15px !important; 
+    cursor: pointer !important;
+  }
+}
+
+
+/*Import Navbar*/
+@import 'sass/_nav';
+/*import Home*/
+@import 'sass/_home';
+/*import signin*/
+@import 'sass/_signin';
+/*import signup*/
+@import 'sass/_signup';
+/*import forget*/
+@import 'sass/forget';
+/*import choose*/
+@import 'sass/_choose';
+/*import newpass*/
+@import 'sass/_newpass';
+/*import passdone*/
+@import 'sass/_passdone';
+/*import stepper1*/
+@import 'sass/_stepper1';
+/*import jsprofile*/
+@import 'sass/_jsprofile';
+/*import Search Result*/
+@import 'sass/_serch-result';
+/*import bo-dashboard"*/
+@import "sass/_bo-dashboard";
+/*Import job-vacancy*/
+@import 'sass/_job-vacancy';
+/*import animation*/
+@import 'sass/animation';
+/*import jsnotification*/
+// @import 'sass/_jsnotification';
+/*import jsprofile*/
+@import 'sass/_jssetting';
+/*import footer*/
+@import 'sass/_footer';

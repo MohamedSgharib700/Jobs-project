@@ -1,0 +1,20 @@
+ nav{
+    background: #13A651!important;
+}
+.wave{
+    background: #13A651!important;
+}
+.side-menu__item.active, .side-menu__item:hover, .side-menu__item:focus {
+    background: #13A651!important;
+}
+.select2-container--default .select2-selection--single .select2-selection__arrow{
+    left:0 !important;
+}
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+ -webkit-appearance: none;
+ margin: 0;
+}
+.bg-colour{
+background-color: #13A651!important;
+ }
